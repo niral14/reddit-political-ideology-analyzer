@@ -13,7 +13,7 @@ with open("vectorizer.pkl", "rb") as f:
     vectorizer = pickle.load(f)
 
 # Manual mappings
-leaning_map = {0: "Liberal", 1: "Conservative"}
+leaning_map = {1: "Liberal", 0: "Conservative"}
 subreddit_list = [
     "Capitalism", "Communism", "Democratic Socialism", "Liberal", "Libertarian",
     "Radical Feminism", "Social Democracy", "All the left", "Anarchial capitalism",
