@@ -1,8 +1,9 @@
 import streamlit as st
 import pickle
+import gzip
 
 # Load models and vectorizer
-with open("political_lean_model.pkl", "rb") as f:
+with gzip.open("political_lean_model.pkl.gz", "rb") as f:
     political_model= pickle.load(f) 
 
 
